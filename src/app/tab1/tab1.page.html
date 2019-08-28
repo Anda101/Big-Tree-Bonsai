@@ -1,41 +1,54 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="success">
+        <ion-title>
+            Big Tree Bonsai
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+<ion-content class="background-image">
+    <!-- 
+    <ion-list>
+        <ion-item (click)="presentPopover($event)">
+            <ion-label>It's an old hobby</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>China vs Japan</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Patience is a virture</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Formal and Informal bonsai</ion-label>
+        </ion-item>
+    </ion-list> -->
+
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <ion-img height="20" src="../../assets/images/branch-conifer-green-40896.jpg" alt="Branch conifer green" class="img"></ion-img>
+            <h3>It's an old hobby</h3>
+            <p>Bonsai cultivation is almost nearly 2000 years, with bonsai being spotted in records dating back to the earliest dynasties.
+                <br> Back then they were just small trees placed in containers: it was the Japanese that took the current interpretation of the bonsai and developed it into the hobby we know of today.
+            </p>
+        </ion-slide>
+        <ion-slide>
+            <ion-img src="../../assets/images/bloom-blossom-dahlia-60597.jpg" alt="Blossoms" class="img"></ion-img>
+            <h3>China vs Japan</h3>
+            <p>Chinese and Japanese bonsai are very different. Perhaps owing to the difference in cultures. <br> Japanse bonsai are more rigid, and are tightly pruned to maintain the shape of the tree, whereas Chinese bonsai growers typically allow for a
+                more freeform, unorthodox shape.</p>
+        </ion-slide>
+        <ion-slide>
+            <ion-img src="../../assets/images/beautiful-bloom-blooming-1169084.jpg" alt="Beautiful Blossoms" class="img"></ion-img>
+            <h3>Patience is a virture</h3>
+            <p>One of the most important aspects of bonsai cultivation is embracing the learning curve and leaving room for trial and error. <br> Every tree has its own share of faults, so it's vital that bonsai growers do their fair share of research to
+                see how they want their trees to turn out after the growing process</p>
+        </ion-slide>
+        <ion-slide>
+            <ion-img src="../../assets/images/bloom-blossom-close-up-36764.jpg" alt="Close up Beautiful Blossoms" class="img"></ion-img>
+            <h3>Formal and Informal bonsai</h3>
+            <p>There are two main types Bonsai styles, Formal and Informal <br> The classic, 'formal' style (Koten) has a wider trunk at the base which tapers off towards the top <br> The informal, or 'Comic' style (Bunjin) is the complete opposite , with
+                a top end much wider than the rest of the trunk</p>
+        </ion-slide>
+    </ion-slides>
+
 </ion-content>

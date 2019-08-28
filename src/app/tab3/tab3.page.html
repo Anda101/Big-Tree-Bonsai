@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="success">
+        <ion-title>
+            Evergreen Bonsai Trees
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-item *ngFor="let tree of evergreen">
+        <ion-avatar slot="start">
+            <img [src]="tree.image">
+        </ion-avatar>
+        <ion-label>{{ tree.title }}</ion-label>
+    </ion-item>
+</ion-content>
