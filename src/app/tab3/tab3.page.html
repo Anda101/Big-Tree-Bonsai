@@ -1,13 +1,14 @@
 <ion-header>
     <ion-toolbar color="success">
         <ion-title>
-            Evergreen Bonsai Trees
+            Evergreen Trees
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-item *ngFor="let tree of evergreen">
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
+    <ion-item *ngFor="let tree of evergreen" (click)="openTree(tree)">
         <ion-avatar slot="start">
             <img [src]="tree.image">
         </ion-avatar>

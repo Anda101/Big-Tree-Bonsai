@@ -5,7 +5,9 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+  },
+  { path: 'deciduous-tree', loadChildren: './deciduous-tree/deciduous-tree.module#DeciduousTreePageModule' },
+  { path: 'evergreen-tree', loadChildren: './evergreen-tree/evergreen-tree.module#EvergreenTreePageModule' }
 ];
 @NgModule({
   imports: [

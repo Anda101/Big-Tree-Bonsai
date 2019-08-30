@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+
+            <ion-icon name="close" (click)="dismiss()" class="iconSize"></ion-icon>
+
+        </ion-buttons>
+        <ion-title>{{extractedValue.title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img [src]="extractedValue.image"></ion-img>
+</ion-content>

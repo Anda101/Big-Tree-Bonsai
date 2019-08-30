@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { DeciduousTreePage } from '../deciduous-tree/deciduous-tree.page';
 
 @Component({
   selector: 'app-tab3',
@@ -25,6 +27,14 @@ export class Tab3Page {
     }
   ];
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
+
+  async openTree(val) {
+    const modal = await this.modalController.create({
+      component: DeciduousTreePage,
+      componentProps: { value: val }
+    });
+    return await modal.present();
+  }
 
 }

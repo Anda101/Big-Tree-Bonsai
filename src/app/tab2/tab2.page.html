@@ -1,23 +1,17 @@
 <ion-header>
     <ion-toolbar color="success">
         <ion-title>
-            Deciduous Bonsai Trees
+            Deciduous Trees
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-item *ngFor="let tree of deciduous">
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
+    <ion-item *ngFor="let tree of deciduous" (click)="openTree(tree)">
         <ion-avatar slot="start">
             <img [src]="tree.image">
         </ion-avatar>
         <ion-label>{{ tree.title }}</ion-label>
-    </ion-item>
-
-    <ion-item>
-        <ion-icon slot="start"></ion-icon>
-        <ion-label>
-            <h3></h3>
-        </ion-label>
     </ion-item>
 </ion-content>
