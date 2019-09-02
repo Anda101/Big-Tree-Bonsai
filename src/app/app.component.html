@@ -2,15 +2,22 @@
     <ion-split-pane>
         <ion-menu side="end">
             <ion-header>
-                <ion-toolbar color="success">
-                    <ion-title>
+                <ion-toolbar class="toolbar">
+                    <ion-title color="light">
                         Menu
                     </ion-title>
                 </ion-toolbar>
             </ion-header>
 
             <ion-content padding>
-
+                <ion-list>
+                    <ion-item>
+                        <ion-label>
+                            Sign Out
+                        </ion-label>
+                        <ion-icon name="log-out" slot="end"></ion-icon>
+                    </ion-item>
+                </ion-list>
             </ion-content>
         </ion-menu>
         <ion-router-outlet main></ion-router-outlet>

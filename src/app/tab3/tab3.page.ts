@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { DeciduousTreePage } from '../deciduous-tree/deciduous-tree.page';
+import { EvergreenTreePage } from '../evergreen-tree/evergreen-tree.page';
 
 @Component({
   selector: 'app-tab3',
