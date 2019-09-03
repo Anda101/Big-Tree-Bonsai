@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content>
-    <ion-searchbar showCancelButton="focus"></ion-searchbar>
-    <ion-item *ngFor="let tree of deciduous" (click)="openTree(tree)">
+    <ion-searchbar showCancelButton="focus" placeholder="Search Tree" (ionInput)="filteredItems($event)"></ion-searchbar>
+    <ion-item *ngFor="let tree of filterItems" (click)="openTree(tree)">
         <ion-avatar slot="start">
             <img [src]="tree.image">
         </ion-avatar>

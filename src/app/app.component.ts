@@ -10,6 +10,40 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  public appPages = [
+    {
+      title: 'Home',
+      url: '/tab1',
+      icon: 'leaf'
+    },
+    {
+      title: 'Deciduous',
+      url: '/tab2',
+      icon: 'rose'
+    },
+    {
+      title: 'Evegreen',
+      url: '/tab3',
+      icon: 'flower'
+    },
+    {
+      title: 'Fertilizer and Treatment',
+      url: '',
+      icon: 'water'
+    },
+    {
+      title: 'Tools',
+      url: '',
+      icon: 'construct'
+    },
+    {
+      title: 'Sign Out',
+      url: '',
+      icon: 'log-out'
+    }
+  ];
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -21,7 +55,7 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      this.splashScreen.show();
     });
   }
 }

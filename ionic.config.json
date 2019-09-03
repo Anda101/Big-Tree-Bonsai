@@ -1,6 +1,8 @@
 {
   "name": "Big-Tree-Bonsai",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "ebf9fe72"
 }
