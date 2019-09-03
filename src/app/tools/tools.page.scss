@@ -1,0 +1,22 @@
+ion-toolbar {
+    --background: url(../../assets/images/branch-conifer-green-40896.jpg) no-repeat;
+}
+
+ion-content {
+    --background: url(../../assets/images/sketch-1567501545926.png) no-repeat;
+    background-size: cover !important;
+}
+
+.iconSize {
+    font-size: 30px;
+}
+
+ion-item {
+    color: white;
+    --background: url(../../assets/images/sketch-1567501545926.png) no-repeat;
+}
+
+ion-card-subtitle,
+ion-card-title {
+    color: white;
+}

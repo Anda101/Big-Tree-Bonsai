@@ -7,7 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   { path: 'deciduous-tree', loadChildren: './deciduous-tree/deciduous-tree.module#DeciduousTreePageModule' },
-  { path: 'evergreen-tree', loadChildren: './evergreen-tree/evergreen-tree.module#EvergreenTreePageModule' }
+  { path: 'evergreen-tree', loadChildren: './evergreen-tree/evergreen-tree.module#EvergreenTreePageModule' },
+  { path: 'tools', loadChildren: './tools/tools.module#ToolsPageModule' }
 ];
 @NgModule({
   imports: [

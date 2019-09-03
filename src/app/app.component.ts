@@ -14,17 +14,17 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/tab1',
+      url: 'tabs/tab1',
       icon: 'leaf'
     },
     {
       title: 'Deciduous',
-      url: '/tab2',
+      url: 'tabs/tab2',
       icon: 'rose'
     },
     {
       title: 'Evegreen',
-      url: '/tab3',
+      url: 'tabs/tab3',
       icon: 'flower'
     },
     {
@@ -34,7 +34,7 @@ export class AppComponent {
     },
     {
       title: 'Tools',
-      url: '',
+      url: 'tools',
       icon: 'construct'
     },
     {
