@@ -10,14 +10,28 @@ import { AppComponent } from './app.component';
 import { PopoverComponent } from './popover/popover.component';
 import { DeciduousTreePage } from './deciduous-tree/deciduous-tree.page';
 import { EvergreenTreePage } from './evergreen-tree/evergreen-tree.page';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { GoogleMapComponent } from '../app/google-map/google-map.component';
 
 @NgModule({
-  declarations: [AppComponent, PopoverComponent, DeciduousTreePage, EvergreenTreePage],
+  declarations: [
+    AppComponent,
+    PopoverComponent,
+    DeciduousTreePage,
+    EvergreenTreePage,
+    GoogleMapComponent
+  ],
   entryComponents: [PopoverComponent, DeciduousTreePage, EvergreenTreePage],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

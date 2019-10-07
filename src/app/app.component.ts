@@ -38,6 +38,11 @@ export class AppComponent {
       icon: 'construct'
     },
     {
+      title: 'Find Bonsai',
+      url: 'location',
+      icon: 'pin'
+    },
+    {
       title: 'Sign Out',
       url: '',
       icon: 'log-out'

@@ -8,7 +8,8 @@ const routes: Routes = [
   },
   { path: 'deciduous-tree', loadChildren: './deciduous-tree/deciduous-tree.module#DeciduousTreePageModule' },
   { path: 'evergreen-tree', loadChildren: './evergreen-tree/evergreen-tree.module#EvergreenTreePageModule' },
-  { path: 'tools', loadChildren: './tools/tools.module#ToolsPageModule' }
+  { path: 'tools', loadChildren: './tools/tools.module#ToolsPageModule' },
+  { path: 'location', loadChildren: './location/location.module#LocationPageModule' }
 ];
 @NgModule({
   imports: [
