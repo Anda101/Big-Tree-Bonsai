@@ -11,15 +11,14 @@ import { PopoverComponent } from './popover/popover.component';
 import { DeciduousTreePage } from './deciduous-tree/deciduous-tree.page';
 import { EvergreenTreePage } from './evergreen-tree/evergreen-tree.page';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { GoogleMapComponent } from '../app/google-map/google-map.component';
+// import { GoogleMapComponent } from '../app/google-map/google-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PopoverComponent,
     DeciduousTreePage,
-    EvergreenTreePage,
-    GoogleMapComponent
+    EvergreenTreePage
   ],
   entryComponents: [PopoverComponent, DeciduousTreePage, EvergreenTreePage],
   imports: [

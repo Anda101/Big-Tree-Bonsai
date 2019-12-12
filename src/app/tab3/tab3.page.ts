@@ -20,7 +20,7 @@ export class Tab3Page {
   }
 
   RetrieveData() {
-    const url = 'http://127.0.0.1:4000/evergreen';
+    const url = 'http://127.0.0.1:3000/evergreen';
     this.http.get(url).
       subscribe(result => {
         this.items = result;
